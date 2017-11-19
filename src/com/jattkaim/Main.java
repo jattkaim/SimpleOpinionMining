@@ -1,7 +1,6 @@
 package com.jattkaim;
 
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-import sun.tools.jstat.Literal;
 
 import java.util.*;
 
@@ -15,14 +14,15 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-      System.out.println("Please Enter a Review for your doctor: ");
+         System.out.println("Please Enter a Review for your doctor: ");
+        String review = sc.nextLine();
       //String review = sc.next();
 
-      String ads[] = {"and","but","so"};
-      String review = "Dr. Neha was excellent as usual but the overall experience was good. " +
+      String ads[] = {"and","but","so", "although"};
+      /*String review = "Dr. Neha was excellent as usual but the overall experience was good. " +
               "She has been our doctor, for both my wife and myself for years and always " +
               "listens to what we have to say. She has always been friendly, competent, " +
-              "and helpful.";
+              "and helpful.";*/
       int reviewRating = 3;
       String a[]=review.split("(?<!Dr)(?<!DR)[.] | (?<!\\.[a-zA-Z]) ");
       System.out.println("Original review Sentence: "+review);

@@ -53,8 +53,6 @@ public class MiningHelper {
                     if(tempClause.size()>0){
                         clauses.add(tempClause);
                     }
-
-                    System.out.println(tempClause);
                     tempClause = new ArrayList<>();
 
                 }
@@ -98,9 +96,9 @@ public class MiningHelper {
 
         String realAds[] = {"very"};
         String features[] = {"time", "communication"};
-        String comFeatures[] = {"tell","inform", "communication", "listens", "friendly"};
+        String comFeatures[] = {"tell","inform", "communication", "listen", "friendly", "empathetic", "informative", "considerate"};
         String listening[] = {"",""};
-        String conj[] = {"and", "but", "so"};
+        String conj[] = {"and","but","so", "although"};
         Boolean neg = false;
         Boolean found = false;
         System.out.println("");
@@ -141,7 +139,7 @@ public class MiningHelper {
                             //long stopTime = System.nanoTime();
                             //System.out.println("time taken to compare the two words: "+ (stopTime - startTime));
                         }
-                if(word.equals("not") || word.equals("never")){
+                if(word.equals("not") || word.equals("never") ||word.equals("doesn't") ||word.equals("wont") ){
                             neg=true;
                             extracted.setNot(neg);
 
@@ -208,7 +206,7 @@ public class MiningHelper {
         double comrating =0;
         int cntr = 0;
         int cmCntr = 0;
-        String comFeatures[] = {"tell","inform", "communication", "listens", "friendly"};
+        String comFeatures[] = {"tell","inform", "communication", "listen", "friendly", "empathetic", "informative", "considerate"};
         for (Extracted e:eList){
 
             for (Dict d: e.getAdjFound()){

@@ -10,7 +10,7 @@ public class Dict {
 
     }
 
-    public Dict(String Word, int freq, String polarity, float score){
+    public Dict(String Word, int freq, String polarity, double score){
         this.Word = Word;
         this.freq = freq;
         this.polarity = polarity;
