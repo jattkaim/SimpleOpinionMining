@@ -3,7 +3,15 @@ package com.jattkaim;
 import javax.sound.midi.SysexMessage;
 import java.util.ArrayList;
 import java.util.List;
+/***************************************
 
+ * This is a Controller class and contains all methods related to the mining of the sentence
+
+ * bugs to fix: (recognize full stop at the end of the sentence)
+
+ * to do: commenting needed, and more...
+
+ ***************************************/
 public class MiningHelper {
 
     List<Dict> adjectiveList = DictWords.wordsList;
@@ -199,7 +207,6 @@ public class MiningHelper {
 
     System.out.println("RATING FOR THIS REVIEW :" +maths(extractedList));
     }
-
 
     public double maths (List<Extracted> eList){
         double quickrating =0 ;

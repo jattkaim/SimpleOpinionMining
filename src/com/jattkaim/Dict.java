@@ -1,5 +1,11 @@
 package com.jattkaim;
 
+/***************************************
+
+ * This is a Class that contains attributes of a word.
+
+ ***************************************/
+
 public class Dict {
     private String Word;
     private int freq;

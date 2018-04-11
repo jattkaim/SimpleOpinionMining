@@ -3,6 +3,12 @@ package com.jattkaim;
 import java.util.Arrays;
 import java.util.List;
 
+/***************************************
+
+ * This is a Class that contains the dictionary that I have been creating so far
+ * to do: add more words, link with firebase or new cloud server, implement live changes to the ratings
+
+ ***************************************/
 public class DictWords {
     public static List<Dict> wordsList = Arrays.asList(
 

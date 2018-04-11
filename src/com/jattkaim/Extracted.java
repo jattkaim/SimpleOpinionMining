@@ -2,6 +2,12 @@ package com.jattkaim;
 
 import java.util.List;
 
+/***************************************
+
+ * This is lass that contains the attribute of an extracted word.
+
+ ***************************************/
+
 public class Extracted {
 
     List<Dict> adjFound;

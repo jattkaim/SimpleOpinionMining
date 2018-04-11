@@ -3,7 +3,14 @@ package com.jattkaim;
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.util.*;
+/***************************************
 
+ * This is the Main Interface Class that is used to interact with user and display results
+
+ * Work to be done to make this neater and easier to use
+
+
+ ***************************************/
 public class Main {
 
 
@@ -16,9 +23,10 @@ public class Main {
 
          System.out.println("Please Enter a Review for your doctor: ");
         String review = sc.nextLine();
-      //String review = sc.next();
 
       String ads[] = {"and","but","so", "although"};
+
+      /* SAMPLE REVIEW THAT CAN BE USED FOR TESTING */
       /*String review = "Dr. Neha was excellent as usual but the overall experience was good. " +
               "She has been our doctor, for both my wife and myself for years and always " +
               "listens to what we have to say. She has always been friendly, competent, " +

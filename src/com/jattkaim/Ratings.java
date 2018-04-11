@@ -1,5 +1,12 @@
 package com.jattkaim;
 
+/***************************************
+
+ * This is a Class that contains attributes of a rating
+ * todo: find ways to create a more complex rating
+
+ ***************************************/
+
 public class Ratings {
     private double dRating;
     private double comRating;
